@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/ic_navberanda"
+        android:icon="@drawable/ic_home"
+        android:title="@string/beranda"/>
+    <item
+        android:id="@+id/ic_navfav"
+        android:icon="@drawable/ic_favorites"
+        android:title="@string/favorit"/>
+    <item
+        android:id="@+id/ic_navbooking"
+        android:icon="@drawable/ic_list"
+        android:title="@string/booking"/>
+    <item
+        android:id="@+id/ic_navsetting"
+        android:icon="@drawable/ic_settings"
+        android:title="@string/setelan"/>
+</menu>

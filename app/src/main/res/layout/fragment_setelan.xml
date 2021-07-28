@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".fragments.Test4Fragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvLainnya"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#5c61ef"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="28dp"
+            android:text="@string/selamat_datang"
+            android:textColor="@color/white"
+            app:layout_constraintHorizontal_bias="0.093"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/alfa_surya_saputra"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/textView"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/textView"
+            app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cvLainnya2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:backgroundTint="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/cvLainnya">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv1lainnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/ic_akunsay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                app:srcCompat="@drawable/ic_person" />
+
+            <TextView
+                android:id="@+id/tv_lainnya2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="7dp"
+                android:layout_marginBottom="12dp"
+                android:text="@string/akun_saya"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/viewlainnya1"
+            android:layout_width="337dp"
+            android:layout_height="1dp"
+            android:background="#7f7f7f"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/cv1lainnya"
+            tools:ignore="MissingConstraints" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv2lainnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/viewlainnya1"
+            app:layout_constraintStart_toStartOf="@+id/viewlainnya1"
+            app:layout_constraintTop_toBottomOf="@+id/viewlainnya1">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_notif" />
+
+            <TextView
+                android:id="@+id/tv_lainnya"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/notifikasi"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/dive2lainnya"
+            android:layout_width="337dp"
+            android:layout_height="1dp"
+            android:background="#7f7f7f"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv2lainnya" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv3lainnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:onClick="whatsappweb"
+            app:layout_constraintEnd_toEndOf="@+id/dive2lainnya"
+            app:layout_constraintStart_toStartOf="@+id/dive2lainnya"
+            app:layout_constraintTop_toBottomOf="@+id/dive2lainnya">
+
+            <ImageView
+                android:id="@+id/ic_bantuan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_bantuan" />
+
+            <TextView
+                android:id="@+id/tv_lainnya3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/bantuan"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/dive3lainnya"
+            android:layout_width="337dp"
+            android:layout_height="1dp"
+            android:background="#7f7f7f"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv3lainnya" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv4lainnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            app:layout_constraintEnd_toEndOf="@+id/dive3lainnya"
+            app:layout_constraintStart_toStartOf="@+id/dive3lainnya"
+            app:layout_constraintTop_toBottomOf="@+id/dive3lainnya">
+
+            <ImageView
+                android:id="@+id/ic_tentang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_tentang" />
+
+            <TextView
+                android:id="@+id/tv_lainnya4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/tentang_kami"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/dive5lainnya"
+            android:layout_width="337dp"
+            android:layout_height="1dp"
+            android:background="#7f7f7f"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv4lainnya" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cv5lainnya"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="@color/white"
+            android:clickable="true"
+            android:onClick="logout"
+            app:layout_constraintEnd_toEndOf="@+id/dive5lainnya"
+            app:layout_constraintStart_toStartOf="@+id/dive5lainnya"
+            app:layout_constraintTop_toBottomOf="@+id/dive5lainnya">
+
+            <ImageView
+                android:id="@+id/ic_keluar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="10dp"
+                app:srcCompat="@drawable/ic_keluar" />
+
+            <TextView
+                android:id="@+id/tv_lainnya5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="65dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:text="@string/keluar"
+                android:textColor="#7f7f7f"
+                android:textSize="16sp" />
+        </androidx.cardview.widget.CardView>
+
+        <View
+            android:id="@+id/view4"
+            android:layout_width="340dp"
+            android:layout_height="1dp"
+            android:background="#7f7f7f"
+            android:visibility="visible"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cv5lainnya" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

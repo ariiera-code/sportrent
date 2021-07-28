@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SearchActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/toolbarsearch"
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:background="#5c61ef"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <ImageView
+            android:id="@+id/back_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="17dp"
+            android:layout_marginTop="12dp"
+            android:clickable="true"
+            android:contentDescription="@string/todo"
+            android:focusable="true"
+            android:onClick="searchtoberanda"
+            android:src="@drawable/ic_back"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="OnClick" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:fontFamily="sans-serif-medium"
+            android:text="@string/tempat_olahraga"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="@id/back_search"
+            app:layout_constraintLeft_toRightOf="@+id/back_search"
+            app:layout_constraintTop_toTopOf="@id/back_search" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/toolbarsearch"
+        app:layout_constraintVertical_bias="0.0">
+
+        <TextView
+            android:id="@+id/tvSearchDimana"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/dimana"
+            android:textColor="@color/hint"
+            android:textSize="32sp"
+            android:textStyle="bold|italic"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/eTSNamaTempat"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="60dp"
+            android:background="@drawable/input_search"
+            android:drawablePadding="15dp"
+            android:hint="@string/nama_tempat"
+            android:drawableStart="@drawable/ic_search_nama"
+            android:paddingStart="14dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="#919191"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="@id/tvSearchDimana"
+            app:layout_constraintRight_toRightOf="@id/tvSearchDimana"
+            app:layout_constraintTop_toBottomOf="@id/tvSearchDimana" />
+
+        <EditText
+            android:id="@+id/eTSOlahraga"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_search"
+            android:drawablePadding="15dp"
+            android:hint="@string/olahraga"
+            android:drawableStart="@drawable/ic_search_olahraga"
+            android:paddingStart="14dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="#919191"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="@id/eTSNamaTempat"
+            app:layout_constraintRight_toRightOf="@id/eTSNamaTempat"
+            app:layout_constraintTop_toBottomOf="@id/eTSNamaTempat" />
+
+        <EditText
+            android:id="@+id/eTSLokasi"
+            android:layout_width="290dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="30dp"
+            android:background="@drawable/input_search"
+            android:drawablePadding="15dp"
+            android:hint="@string/cek_lokasi"
+            android:drawableStart="@drawable/ic_search_location"
+            android:paddingStart="14dp"
+            android:paddingEnd="10dp"
+            android:textColorHint="#919191"
+            android:textIsSelectable="true"
+            android:textSize="14sp"
+            android:textStyle="italic"
+            app:layout_constraintLeft_toLeftOf="@id/eTSOlahraga"
+            app:layout_constraintRight_toRightOf="@id/eTSOlahraga"
+            app:layout_constraintTop_toBottomOf="@id/eTSOlahraga" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnLokasi"
+            android:layout_width="60dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            app:cardCornerRadius="14dp"
+            android:backgroundTint="#63c9a3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="@+id/eTSLokasi"
+            app:layout_constraintTop_toBottomOf="@+id/eTSLokasi">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_map"
+                android:layout_marginStart="12dp"
+                android:layout_marginTop="7dp"/>
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="220dp"
+            android:layout_height="50dp"
+            android:backgroundTint="#5C61EF"
+            android:padding="0dp"
+            android:clickable="true"
+            android:onClick="searchtoresult"
+            app:cardCornerRadius="14dp"
+            app:layout_constraintBottom_toBottomOf="@+id/btnLokasi"
+            app:layout_constraintEnd_toEndOf="@+id/eTSLokasi"
+            app:layout_constraintLeft_toRightOf="@id/btnLokasi"
+            app:layout_constraintTop_toBottomOf="@+id/eTSLokasi"
+            app:layout_constraintVertical_bias="1.0"
+            android:focusable="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/cek_sekarang"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginTop="11dp"
+                android:layout_marginStart="50dp"/>
+        </androidx.cardview.widget.CardView>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "705586979848",
+    "firebase_url": "https://sport-skuy-e2a30.firebaseio.com",
+    "project_id": "sport-skuy-e2a30",
+    "storage_bucket": "sport-skuy-e2a30.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:705586979848:android:0160198f6c8a11a9529dbd",
+        "android_client_info": {
+          "package_name": "com.alnite.sportskuy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "705586979848-1pgav5rvkbn213cfigr0s28p6g60mduc.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAqIEl3DuqmWbkxzHrIU8g4xR6S8TMHpjg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "705586979848-1pgav5rvkbn213cfigr0s28p6g60mduc.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

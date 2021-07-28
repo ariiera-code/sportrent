@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/cvfutsallist"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="30dp"
+    android:layout_marginStart="30dp"
+    android:layout_marginEnd="30dp"
+    android:layout_marginBottom="10dp"
+    android:clickable="true"
+    android:foreground="?selectableItemBackground"
+    app:cardCornerRadius="10dp"
+    app:cardElevation="2dp"
+    android:focusable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clfutsalcv_mulawarman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#E8E8E8">
+
+        <ImageView
+            android:id="@+id/futsalcv_mulawarman1"
+            android:layout_width="210dp"
+            android:layout_height="180dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/futsalcv_mulawarman"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/futsalcv_mulawarman2"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/futsalcv_mulawarman2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/futsalcv_mulawarman1"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/futsalcv_mulawarman3"
+            android:layout_width="90dp"
+            android:layout_height="90dp"
+            android:scaleType="centerCrop"
+            android:src="@drawable/futsalcv_mulawarman3"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toEndOf="@+id/futsalcv_mulawarman1"
+            app:layout_constraintTop_toBottomOf="@+id/futsalcv_mulawarman2"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvcvNameMulawarman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:text="@string/mulawarman_futsal_court"
+            android:textColor="#1e1e1e"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/clfutsalcv_mulawarman"
+            app:layout_constraintRight_toRightOf="@id/clfutsalcv_mulawarman"
+            app:layout_constraintTop_toBottomOf="@+id/futsalcv_mulawarman1"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvLocMulawarman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="7dp"
+            android:layout_marginTop="4dp"
+            android:fontFamily="sans-serif-black"
+            android:text="@string/semarang"
+            android:textColor="#1e1e1e"
+            android:textSize="13sp"
+            app:drawableStartCompat="@drawable/ic_location"
+            app:layout_constraintBottom_toTopOf="@+id/tvFiturMulawarman"
+            app:layout_constraintEnd_toEndOf="@+id/tvcvNameMulawarman"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintRight_toRightOf="@id/tvcvNameMulawarman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvcvNameMulawarman"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <TextView
+            android:id="@+id/tvFiturMulawarman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="8dp"
+            android:background="@drawable/box_text"
+            android:fontFamily="sans-serif-light"
+            android:padding="2dp"
+            android:text="@string/tersedia_makanan_minuman"
+            android:textColor="#5c61ef"
+            android:textSize="7sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="@+id/tvLocMulawarman"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintRight_toRightOf="@id/tvcvNameMulawarman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvLocMulawarman"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tvcvrupiahmulawarman"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="2dp"
+            android:layout_marginBottom="4dp"
+            android:text="@string/rp"
+            android:textColor="#1e1e1e"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@id/tvcvHarga"
+            app:layout_constraintRight_toLeftOf="@id/tvcvHarga"
+            app:layout_constraintTop_toTopOf="@id/tvcvHarga"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SmallSp" />
+
+        <TextView
+            android:id="@+id/tvcvHarga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/_30_000"
+            android:textColor="#1e1e1e"
+            android:textSize="20sp"
+            app:layout_constraintBottom_toTopOf="@+id/btnBookSekMulawarman"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.778"
+            app:layout_constraintLeft_toLeftOf="@id/clfutsalcv_mulawarman"
+            app:layout_constraintRight_toRightOf="@id/clfutsalcv_mulawarman"
+            app:layout_constraintStart_toEndOf="@+id/tvFiturMulawarman"
+            app:layout_constraintTop_toBottomOf="@+id/futsalcv_mulawarman1"
+            app:layout_constraintVertical_bias="0.985" />
+
+        <TextView
+            android:id="@+id/tvcvperjam"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="4dp"
+            android:text="@string/jam"
+            android:textColor="#1e1e1e"
+            android:textSize="10sp"
+            app:layout_constraintBottom_toBottomOf="@+id/tvcvHarga"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintLeft_toLeftOf="@id/clfutsalcv_mulawarman"
+            app:layout_constraintRight_toRightOf="@id/clfutsalcv_mulawarman"
+            app:layout_constraintStart_toEndOf="@+id/tvcvHarga"
+            app:layout_constraintTop_toTopOf="@+id/tvcvHarga"
+            app:layout_constraintVertical_bias="1.0"
+            tools:ignore="SmallSp" />
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/btnBookSekMulawarman"
+            android:layout_width="290dp"
+            android:layout_height="25dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#5c61ef"
+            android:includeFontPadding="true"
+            android:paddingTop="0dp"
+            android:paddingBottom="0dp"
+            app:cardCornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.4"
+            app:layout_constraintLeft_toLeftOf="@id/tvFiturMulawarman"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/tvFiturMulawarman"
+            app:layout_constraintVertical_bias="0.0"
+            tools:ignore="SmallSp">
+
+            <TextView
+                android:id="@+id/tvbook"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="sans-serif-black"
+                android:text="@string/booking_sekarang"
+                android:textAlignment="center"
+                android:textColor="@color/white"
+                android:textSize="10sp"
+                android:textStyle="bold" />
+        </androidx.cardview.widget.CardView>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
